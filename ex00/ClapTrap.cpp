@@ -31,46 +31,6 @@ ClapTrap::~ClapTrap(){
     std::cout << "Default destructor called" << std::endl;
 }
 
-std::string ClapTrap::getName(void) const{
-    std::cout << "getName member function called" << std::endl;
-    return this->Name;
-}
-
-int ClapTrap::getHitPoints(void) const{
-    std::cout << "getHitPoints member function called" << std::endl;
-    return this->HitPoints;
-}
-
-int ClapTrap::getEnergyPoints(void) const{
-    std::cout << "getEnergyPoints member function called" << std::endl;
-    return this->EnergyPoints;
-}
-
-int ClapTrap::getAttackDamage(void) const{
-    std::cout << "getAttackDamage member function called" << std::endl;
-    return this->AttackDamage;
-}
-
-void ClapTrap::setName(std::string Name){
-    std::cout << "setName member function called" << std::endl;
-    this->Name = Name;
-}
-
-void ClapTrap::setHitPoints(int HitPoints){
-    std::cout << "setHitPoints member function called" << std::endl;
-    this->HitPoints = HitPoints;
-}
-
-void ClapTrap::setEnergyPoints(int EnergyPoints){
-    std::cout << "setEnergyPoints member function called" << std::endl;
-    this->EnergyPoints = EnergyPoints;
-}
-
-void ClapTrap::setAttackDamage(int AttackDamage){
-    std::cout << "setAttackDamage member function called" << std::endl;
-    this->AttackDamage = AttackDamage;
-}
-
 void ClapTrap::attack(const std::string& target){
     if (this->HitPoints <= 0){
         std::cout << "ClapTrap " << this->Name << " can not attack he is already dead" << std::endl;
